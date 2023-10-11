@@ -5,6 +5,7 @@ export const Container = styled.main`
     max-width: 80%;
     margin: 0 auto;
     margin-top: 120px;
+    margin-bottom: 120px;
 
     display: flex;
     flex-direction: row;
@@ -13,7 +14,7 @@ export const Container = styled.main`
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 360px;
 `
 
 export const Column = styled.div`
@@ -22,10 +23,10 @@ export const Column = styled.div`
 
 export const Row = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
     margin-top: 20px;
+    gap: 20px;
 `
 
 
@@ -78,9 +79,30 @@ export const CriarText =  styled.p`
     font-size: 14px;
     line-height: 19px;
 
-    color: #23DD7A;
-
-    &:hover{
-        cursor: pointer;
-    }
+  
 `
+
+export const Text =  styled.p`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+
+    color: #FFFFFF;
+
+  
+`
+
+export const FazerLogin = styled.span`
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #23dd7a;
+
+  &:hover{
+    cursor: pointer;
+}
+`;
